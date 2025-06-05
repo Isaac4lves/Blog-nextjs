@@ -1,6 +1,6 @@
 import { query } from "@/app/lib/db";
 
-export default async function Post({
+export default async function Page({
   params,
 }: {
   params: { id: string };

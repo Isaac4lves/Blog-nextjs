@@ -16,10 +16,12 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/estree": "^1.0.7",
+    "@types/node": "^20.17.57",
     "@types/pg": "^8.15.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/unist": "^3.0.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

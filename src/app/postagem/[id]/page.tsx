@@ -1,10 +1,12 @@
 import { query } from "@/app/lib/db";
 
-export default async function Page({
-  params,
-}: {
-  params: { id: string };
-}) {
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
+export default async function Page({ params }: Props) {
   const { id } = params;
 
   const result = await query("SELECT * FROM posts WHERE id = $1", [id]);

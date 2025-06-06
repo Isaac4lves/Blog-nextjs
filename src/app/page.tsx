@@ -15,7 +15,7 @@ export default async function Home() {
 
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {posts.map((post: any) => (
-          <li key={post.id} className="border rounded overflow-hidden shadow hover:shadow-lg transition">
+          <li key={post.id} className="rounded overflow-hidden shadow hover:shadow-xl transition">
             <Link href={`/postagem/${post.id}`}>
               <div className="w-full aspect-[3/2] overflow-hidden">
                 <img

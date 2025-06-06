@@ -4,3 +4,8 @@
 p, h1, h2 {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
+
+#artigo p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}

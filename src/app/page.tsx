@@ -27,7 +27,7 @@ export default async function Home() {
               <div className="p-4">
                 <h2 className="text-2xl font-bold mb-2">{post.title}</h2> 
                 <p className="text-l line-clamp-3"> {post.description} </p>
-                <p className='text-center text-gray-600 m-2'> Escrito por {post.writer}, {post.created_at}  </p>
+                <p className='text-center text-gray-600 m-2'> {post.created_at}  </p>
               </div>
             </Link>
           </li>

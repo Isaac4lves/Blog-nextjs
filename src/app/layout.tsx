@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from 'next/link';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({
       <body>
       <header className="bg-white shadow">
           <div className="p-5 justify-between">
-            <div className="text-center text-3xl font-bold">Alt Tab</div>
+            <Link href={`/`}> <div className="text-center text-3xl font-bold">Alt Tab</div> </Link>
           </div>
         </header>
 

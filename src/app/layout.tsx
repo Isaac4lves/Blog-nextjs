@@ -15,14 +15,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-
-        <header className="bg-white shadow">
+      <header className="bg-white shadow">
           <div className="p-5 justify-between">
             <div className="text-center text-3xl font-bold">Alt Tab</div>
           </div>
         </header>
 
-        {children}
+        <main className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8 rounded-2xl">
+            {children}
+          </div>
+        </main>
 
       </body>
     </html>

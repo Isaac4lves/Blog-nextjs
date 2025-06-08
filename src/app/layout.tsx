@@ -29,6 +29,33 @@ export default function RootLayout({
             {children}
           </div>
         </main>
+
+        <footer className="w-full mt-16 border-t border-zinc-800 py-6 px-4 text-center text-lg text-zinc-300">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+            <p className="text-sm">
+              &copy; 2025 AltTab — Feito por <span className="text-white">Isaac Alves Andrade</span>
+            </p>
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/Isaac4lves"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-500 transition-colors text-sm"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/isaacalvesandrade"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-500 transition-colors text-sm"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </footer>
+
       </body>
     </html>
   );

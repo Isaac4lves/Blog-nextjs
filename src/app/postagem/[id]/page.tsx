@@ -33,7 +33,7 @@ export default async function Page({ params }: Props) {
   }
 
   return (
-    <main className="w-full max-w-6xl px-4 py-10 mx-auto text-gray-300"> {/* texto claro */}
+    <main className="w-full max-w-3/4 px-4 py-10 mx-auto text-gray-300"> {/* texto claro */}
       <header className="mb-8">
         <h1 className="text-4xl font-extrabold leading-tight mb-2">
           {post.title}

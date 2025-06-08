@@ -1,11 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
-p, h1, h2 {
+li,
+p,
+h1,
+h2 {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 
-#artigo p {
+#banner-destaque:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+#artigo p,
+#artigo li {
     font-size: 1.2rem;
     margin-top: 15px;
+}
+
+#artigo h2 {
+    font-size: 1.4rem;
+    margin-top: 28px;
+    font-weight: bold;
+    word-spacing: 1.8px;
+}
+
+#artigo pre {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#artigo code {
+    font-family: monospace;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+}
+#artigo ul li {
+    margin-left: 15px;
+}
+#artigo ul li::before {
+    content: "• ";
+    font-weight: bold;
+}
+
+#artigo h2::before {
+    content: "# ";
+    font-weight: bold;
 }

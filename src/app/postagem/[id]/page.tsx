@@ -33,7 +33,7 @@ export default async function Page({ params }: Props) {
   }
 
   return (
-    <main className="w-full max-w-3/4 px-4 py-10 mx-auto text-gray-300"> {/* texto claro */}
+    <main className="w-full max-w-full sm:max-w-3xl md:max-w-4xl px-4 py-10 mx-auto text-gray-300">
       <header className="mb-8">
         <h1 className="text-4xl font-extrabold leading-tight mb-2">
           {post.title}
@@ -66,8 +66,10 @@ export default async function Page({ params }: Props) {
           />
         </div>
       )}
-      <article id="artigo"
-        className=" flex flex-col gp-4 prose prose-2xl max-w-full prose-invert"
+
+      <article
+        id="artigo"
+        className="flex flex-col gap-4 prose prose-lg max-w-full prose-invert"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 

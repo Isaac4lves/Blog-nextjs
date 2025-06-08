@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'AltTab',
-  description: 'Blog sobre humor geração Z e tecnologia',
+  description: 'Blog sobre tecnologia, tutoriais e muito mais!.',
 };
 
 export default function RootLayout({
